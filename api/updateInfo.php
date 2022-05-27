@@ -14,12 +14,11 @@ if(mysqli_num_rows($check1)>0)
 {
     if($cpass==$pass)
     {
-      
-       $check = mysqli_query($connect,"UPDATE user SET mobile='$mobile' where mobile='$cmob'");
        $check1 = mysqli_query($connect,"UPDATE user SET name='$name' where mobile='$cmob'");
        $check2 = mysqli_query($connect,"UPDATE user SET password='$pass' where mobile='$cmob'");
        $check3 = mysqli_query($connect,"UPDATE user SET email='$email' where mobile='$cmob'");
        $check4 = mysqli_query($connect,"UPDATE user SET photo='$image' where mobile='$cmob'");
+       $check = mysqli_query($connect,"UPDATE user SET mobile='$mobile' where mobile='$cmob'");
       
        
        echo '<script>
